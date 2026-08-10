@@ -7,7 +7,7 @@
 
 
 -- Question 2
--- Display only customer_id, customer_name, email
+-- Display only customer_id, city, gender
 -- from the customers table.
 
 
@@ -35,8 +35,8 @@
 
 
 -- Question 8
--- Display customer_id and customer_name from customers.
--- Give customer_name the alias "name".
+-- Display customer_id and gender from customers.
+-- Give customer_if the alias "id".
 
 
 -- Question 9

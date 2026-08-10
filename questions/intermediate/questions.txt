@@ -1,0 +1,350 @@
+/*
+============================================================
+SQL PRACTICE - INTERMEDIATE
+============================================================
+
+Tables:
+
+customers
+---------
+customer_id
+gender
+age
+city
+signup_date
+loyalty_member
+
+
+products
+--------
+product_id
+product_name
+category
+price
+
+
+orders
+------
+order_id
+customer_id
+product_id
+order_date
+quantity
+payment_method
+
+============================================================
+INTERMEDIATE QUESTIONS
+============================================================
+*/
+
+
+-- ==========================================================
+-- SECTION 1: FILTERING
+-- ==========================================================
+
+-- Question 1
+-- Find all customers who are older than 40.
+
+
+-- Question 2
+-- Find all customers whose age is between 25 and 40.
+
+
+-- Question 3
+-- Find all customers who live in the city 'London'.
+
+
+-- Question 4
+-- Find all customers who are loyalty members.
+
+
+-- Question 5
+-- Find all customers who are NOT loyalty members.
+
+
+-- Question 6
+-- Find all products whose price is greater than 200.
+
+
+-- Question 7
+-- Find all products whose price is between 100 and 200.
+
+
+-- Question 8
+-- Find all products belonging to the 'Electronics' category.
+
+
+-- Question 9
+-- Find all products whose product_name contains the word 'Watch'.
+
+
+-- Question 10
+-- Find all orders where the quantity is greater than 3.
+
+
+
+-- ==========================================================
+-- SECTION 2: ORDER BY AND LIMIT
+-- ==========================================================
+
+-- Question 11
+-- Display all products sorted by price from highest to lowest.
+
+
+-- Question 12
+-- Display the 10 most expensive products.
+
+
+-- Question 13
+-- Display the 10 cheapest products.
+
+
+-- Question 14
+-- Display all customers sorted by age from oldest to youngest.
+
+
+-- Question 15
+-- Display the 20 orders with the highest quantity.
+
+
+
+-- ==========================================================
+-- SECTION 3: AGGREGATE FUNCTIONS
+-- ==========================================================
+
+-- Question 16
+-- Find the total number of customers.
+
+
+-- Question 17
+-- Find the total number of products.
+
+
+-- Question 18
+-- Find the total number of orders.
+
+
+-- Question 19
+-- Find the average product price.
+
+
+-- Question 20
+-- Find the highest product price.
+
+
+-- Question 21
+-- Find the lowest product price.
+
+
+-- Question 22
+-- Find the total quantity of products ordered across all orders.
+
+
+
+-- ==========================================================
+-- SECTION 4: GROUP BY
+-- ==========================================================
+
+-- Question 23
+-- Find the number of customers in each city.
+
+
+-- Question 24
+-- Find the average age of customers in each city.
+
+
+-- Question 25
+-- Find the number of loyalty members and non-loyalty members.
+
+
+-- Question 26
+-- Find the number of products in each category.
+
+
+-- Question 27
+-- Find the average product price for each category.
+
+
+-- Question 28
+-- Find the maximum product price in each category.
+
+
+-- Question 29
+-- Find the minimum product price in each category.
+
+
+-- Question 30
+-- Find the total quantity ordered for each product.
+
+
+
+-- ==========================================================
+-- SECTION 5: HAVING
+-- ==========================================================
+
+-- Question 31
+-- Find cities that have more than 100 customers.
+
+
+-- Question 32
+-- Find product categories that contain more than 10 products.
+
+
+-- Question 33
+-- Find products whose total ordered quantity is greater than 100.
+
+
+-- Question 34
+-- Find cities where the average customer age is greater than 40.
+
+
+
+-- ==========================================================
+-- SECTION 6: BASIC JOINS
+-- ==========================================================
+
+-- Question 35
+-- Display every order along with the product name.
+
+
+-- Question 36
+-- Display every order along with the product category.
+
+
+-- Question 37
+-- Display order_id, customer_id, product_name,
+-- order_date and quantity.
+
+
+-- Question 38
+-- Display order_id, product_name, price and quantity.
+
+
+-- Question 39
+-- Calculate the total value of each order.
+--
+-- Formula:
+-- quantity * price
+--
+-- Display:
+-- order_id
+-- product_name
+-- quantity
+-- price
+-- total_value
+
+
+-- Question 40
+-- Find the total revenue generated from all orders.
+
+
+
+-- ==========================================================
+-- SECTION 7: CUSTOMER + ORDER ANALYSIS
+-- ==========================================================
+
+-- Question 41
+-- Find the number of orders placed by each customer.
+
+
+-- Question 42
+-- Find the total quantity ordered by each customer.
+
+
+-- Question 43
+-- Find the total amount spent by each customer.
+--
+-- Formula:
+-- quantity * product price
+
+
+-- Question 44
+-- Find the top 10 customers based on total spending.
+
+
+-- Question 45
+-- Find the top 10 customers based on total quantity ordered.
+
+
+
+-- ==========================================================
+-- SECTION 8: PRODUCT ANALYSIS
+-- ==========================================================
+
+-- Question 46
+-- Find the total quantity sold for each product.
+
+
+-- Question 47
+-- Find the total revenue generated by each product.
+
+
+-- Question 48
+-- Find the top 10 products based on total revenue.
+
+
+-- Question 49
+-- Find the top 10 products based on total quantity sold.
+
+
+-- Question 50
+-- Find the total revenue generated by each product category.
+
+
+
+-- ==========================================================
+-- SECTION 9: PAYMENT METHOD ANALYSIS
+-- ==========================================================
+
+-- Question 51
+-- Find the number of orders for each payment method.
+
+
+-- Question 52
+-- Find the total quantity ordered using each payment method.
+
+
+-- Question 53
+-- Find the total revenue generated by each payment method.
+
+
+-- Question 54
+-- Find the payment method that generated the highest revenue.
+
+
+
+-- ==========================================================
+-- SECTION 10: CUSTOMER DEMOGRAPHICS
+-- ==========================================================
+
+-- Question 55
+-- Find the average spending of loyalty members.
+
+
+-- Question 56
+-- Find the average spending of non-loyalty members.
+
+
+-- Question 57
+-- Compare the total revenue generated by loyalty members
+-- and non-loyalty members.
+
+
+-- Question 58
+-- Find the total spending of customers grouped by gender.
+
+
+-- Question 59
+-- Find the average age of customers who have placed orders.
+
+
+-- Question 60
+-- Find the city that generated the highest total revenue.
+
+
+
+/*
+============================================================
+END OF INTERMEDIATE QUESTIONS
+============================================================
+*/
