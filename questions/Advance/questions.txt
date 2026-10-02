@@ -1,0 +1,459 @@
+/*
+============================================================
+SQL PRACTICE - ADVANCED
+============================================================
+
+Tables:
+
+customers
+---------
+customer_id
+gender
+age
+city
+signup_date
+loyalty_member
+
+
+products
+--------
+product_id
+product_name
+category
+price
+
+
+orders
+------
+order_id
+customer_id
+product_id
+order_date
+quantity
+payment_method
+
+============================================================
+ADVANCED QUESTIONS
+============================================================
+*/
+
+
+-- ==========================================================
+-- SECTION 1: ADVANCED JOINS
+-- ==========================================================
+
+-- Question 1
+-- Find customers who have never placed an order.
+
+
+-- Question 2
+-- Find products that have never been ordered.
+
+
+-- Question 3
+-- Find customers who have placed at least one order
+-- and display their total spending.
+
+
+-- Question 4
+-- Find customers who have purchased products from
+-- more than one category.
+
+
+-- Question 5
+-- Find customers who have purchased products from
+-- at least 3 different categories.
+
+
+
+-- ==========================================================
+-- SECTION 2: SUBQUERIES
+-- ==========================================================
+
+-- Question 6
+-- Find all products whose price is greater than the
+-- average price of all products.
+
+
+-- Question 7
+-- Find all products whose price is greater than the
+-- average price of products in their category.
+
+
+-- Question 8
+-- Find the second-highest product price.
+
+
+-- Question 9
+-- Find the third-highest product price.
+
+
+-- Question 10
+-- Find customers whose total spending is greater than
+-- the average spending of all customers who placed orders.
+
+
+
+-- ==========================================================
+-- SECTION 3: CORRELATED SUBQUERIES
+-- ==========================================================
+
+-- Question 11
+-- Find products whose price is greater than the average
+-- price of products in the same category.
+
+
+-- Question 12
+-- Find customers whose total spending is greater than
+-- the average spending of customers in the same city.
+
+
+-- Question 13
+-- Find the most expensive product in each category
+-- using a correlated subquery.
+
+
+
+-- ==========================================================
+-- SECTION 4: CASE STATEMENTS
+-- ==========================================================
+
+-- Question 14
+-- Create a price_category column:
+--
+-- price < 50       -> 'Cheap'
+-- 50 to 150       -> 'Medium'
+-- price > 150     -> 'Expensive'
+
+
+-- Question 15
+-- Create an age_group column for customers:
+--
+-- age < 25        -> 'Young'
+-- 25 to 40        -> 'Adult'
+-- 41 to 60        -> 'Middle Age'
+-- above 60        -> 'Senior'
+
+
+-- Question 16
+-- Create a customer_type based on total spending:
+--
+-- spending < 500       -> 'Low Value'
+-- 500 to 1000          -> 'Medium Value'
+-- above 1000           -> 'High Value'
+
+
+-- Question 17
+-- Classify orders based on quantity:
+--
+-- quantity <= 2        -> 'Small'
+-- quantity 3 to 5      -> 'Medium'
+-- quantity > 5         -> 'Large'
+
+
+
+-- ==========================================================
+-- SECTION 5: COMMON TABLE EXPRESSIONS (CTEs)
+-- ==========================================================
+
+-- Question 18
+-- Using a CTE, calculate the total spending of every customer.
+
+
+-- Question 19
+-- Using a CTE, find the top 10 customers based on
+-- total spending.
+
+
+-- Question 20
+-- Using a CTE, calculate total revenue for each
+-- product category.
+
+
+-- Question 21
+-- Using a CTE, find the category with the highest revenue.
+
+
+-- Question 22
+-- Using a CTE, calculate total spending for every city.
+
+
+
+-- ==========================================================
+-- SECTION 6: WINDOW FUNCTIONS
+-- ==========================================================
+
+-- Question 23
+-- Rank all products based on price from highest to lowest
+-- using RANK().
+
+
+-- Question 24
+-- Rank all products based on price from highest to lowest
+-- using DENSE_RANK().
+
+
+-- Question 25
+-- Assign a row number to products ordered by price
+-- from highest to lowest.
+
+
+-- Question 26
+-- Find the most expensive product in each category
+-- using ROW_NUMBER().
+
+
+-- Question 27
+-- Find the top 3 most expensive products in every category.
+
+
+-- Question 28
+-- Display every product along with the average price
+-- of its category using a window function.
+
+
+-- Question 29
+-- Display each product's price and the difference between
+-- its price and the average price of its category.
+
+
+
+-- ==========================================================
+-- SECTION 7: CUSTOMER RANKING
+-- ==========================================================
+
+-- Question 30
+-- Rank customers based on total spending from highest
+-- to lowest.
+
+
+-- Question 31
+-- Find the top 3 customers in each city based on
+-- total spending.
+
+
+-- Question 32
+-- Find the second-highest spending customer in each city.
+
+
+-- Question 33
+-- Rank customers separately within loyalty_member groups
+-- based on total spending.
+
+
+
+-- ==========================================================
+-- SECTION 8: LAG AND LEAD
+-- ==========================================================
+
+-- Question 34
+-- For every customer, display their order quantity and
+-- the quantity from their previous order using LAG().
+
+
+-- Question 35
+-- For every customer, display their order quantity and
+-- the quantity from their next order using LEAD().
+
+
+-- Question 36
+-- Calculate the difference between the current order
+-- quantity and the previous order quantity.
+
+
+-- Question 37
+-- Find customers whose latest order quantity is greater
+-- than their previous order quantity.
+
+
+
+-- ==========================================================
+-- SECTION 9: DATE ANALYSIS
+-- ==========================================================
+
+-- Question 38
+-- Find the total number of orders placed on each date.
+
+
+-- Question 39
+-- Find the total revenue generated on each date.
+
+
+-- Question 40
+-- Find the total revenue generated in each month.
+
+
+-- Question 41
+-- Find the month with the highest revenue.
+
+
+-- Question 42
+-- Find the month with the highest number of orders.
+
+
+-- Question 43
+-- Find the number of new customers who signed up
+-- in each month.
+
+
+
+-- ==========================================================
+-- SECTION 10: REVENUE ANALYSIS
+-- ==========================================================
+
+-- Question 44
+-- Find the percentage contribution of each product category
+-- to total company revenue.
+
+
+-- Question 45
+-- Find the percentage contribution of each customer
+-- to total company revenue.
+
+
+-- Question 46
+-- Find the top 3 products by revenue in each category.
+
+
+-- Question 47
+-- Find the product with the highest revenue in each category.
+
+
+-- Question 48
+-- Find the category with the highest average order value.
+
+
+
+-- ==========================================================
+-- SECTION 11: ADVANCED CUSTOMER ANALYSIS
+-- ==========================================================
+
+-- Question 49
+-- Find customers who purchased products from every
+-- available product category.
+
+
+-- Question 50
+-- Find customers who have purchased the most expensive
+-- product in the database.
+
+
+-- Question 51
+-- Find customers who have never purchased products
+-- from the 'Electronics' category.
+
+
+-- Question 52
+-- Find customers who purchased both 'Electronics'
+-- and 'Beauty' products.
+
+
+-- Question 53
+-- Find customers who purchased products from exactly
+-- 3 different categories.
+
+
+
+-- ==========================================================
+-- SECTION 12: ADVANCED BUSINESS PROBLEMS
+-- ==========================================================
+
+-- Question 54
+-- Find the customer with the highest total spending.
+
+
+-- Question 55
+-- Find the customer with the highest average order value.
+
+
+-- Question 56
+-- Find the customer with the highest number of orders.
+
+
+-- Question 57
+-- Find the product with the highest total quantity sold.
+
+
+-- Question 58
+-- Find the product with the highest total revenue.
+
+
+-- Question 59
+-- Find the city with the highest revenue per customer.
+
+
+-- Question 60
+-- Find the loyalty_member group with the highest
+-- average customer spending.
+
+
+
+-- ==========================================================
+-- SECTION 13: EXPERT CHALLENGES
+-- ==========================================================
+
+-- Question 61
+-- Calculate the month-over-month revenue growth.
+
+
+-- Question 62
+-- Find the top 3 customers by spending for every month.
+
+
+-- Question 63
+-- Find the top-selling product in each category based
+-- on total quantity sold.
+
+
+-- Question 64
+-- Find products whose revenue is greater than the
+-- average product revenue.
+
+
+-- Question 65
+-- Find categories whose average product price is greater
+-- than the overall average product price.
+
+
+-- Question 66
+-- Find the second-highest revenue-generating product
+-- in each category.
+
+
+-- Question 67
+-- Find the percentage of customers who have never
+-- placed an order.
+
+
+-- Question 68
+-- Find the average number of products purchased per order.
+
+
+-- Question 69
+-- Find the customer with the highest average order value
+-- among loyalty members.
+
+
+-- Question 70
+-- Create a complete customer sales report containing:
+--
+-- customer_id
+-- city
+-- gender
+-- loyalty_member
+-- number_of_orders
+-- total_quantity
+-- total_spending
+-- average_order_value
+-- highest_order_value
+-- lowest_order_value
+-- customer_rank
+--
+-- Rank customers based on total spending.
+
+
+/*
+============================================================
+END OF ADVANCED QUESTIONS
+============================================================
+*/
