@@ -7,6 +7,6 @@ FROM customers c
 JOIN orders o
 ON c.customer_id = o.customer_id
 JOIN products p
-ON p.product_id = o.order_id
+ON p.product_id = o.product_id
 GROUP BY c.customer_id
 ORDER BY total_spend DESC;
